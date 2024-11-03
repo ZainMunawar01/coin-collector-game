@@ -1,0 +1,45 @@
+/* src/index.css */
+
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a full height for the body and center the content */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #282c34; /* Dark background for contrast */
+  color: white; /* White text color */
+}
+
+/* Style for the main container */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Style for the game container */
+#game {
+  width: 800px; /* Set a width for the game area */
+  height: 600px; /* Set a height for the game area */
+  border: 2px solid #61dafb; /* Light blue border around the game area */
+  background-color: #222; /* Dark background for the game area */
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+  #game {
+      width: 100%; /* Full width on smaller screens */
+      height: auto; /* Auto height on smaller screens */
+  }
+
+  h1 {
+      font-size: 2rem; /* Smaller font size for smaller screens */
+  }
+}
